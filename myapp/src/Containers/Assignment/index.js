@@ -14,14 +14,14 @@ const Assignment = () => {
   const categories = useSelector((state) => state.categoryReducer.categories);
   const dispatch = useDispatch();
 
-  const handleAddCategory = () => {
-    const newCategory = { id: Date.now(), name: 'New Category' };
-    dispatch(addCategory(newCategory));
-  };
+  // const handleAddCategory = () => {
+  //   const newCategory = { id: Date.now(), name: 'New Category' };
+  //   dispatch(addCategory(newCategory));
+  // };
 
-  const handleRemoveCategory = (id) => {
-    dispatch(removeCategory(id));
-  };
+  // const handleRemoveCategory = (id) => {
+  //   dispatch(removeCategory(id));
+  // };
 
   const [slider, setSlider] = useState(false);
 
@@ -98,92 +98,3 @@ const Assignment = () => {
 
 export default Assignment;
 
-{/* <Box sx={{ mt: 3 }}>
-<Typography variant="h6">CSPM Executive Dashboard</Typography>
-<Grid container spacing={2} sx={{ mt: 2 }}>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Cloud Accounts</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Cloud Accounts Risk Assessment</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>hi</Typography>
-    </Box>
-  </Grid>
-</Grid>
-</Box>
-
-<Box sx={{ mt: 3 }}>
-<Typography variant="h6">CWPP Dashboard:</Typography>
-<Grid container spacing={2} sx={{ mt: 2 }}>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Top 5 Namespace specific Alerts</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Workload Alerts</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>hi</Typography>
-    </Box>
-  </Grid>
-</Grid>
-</Box>
-
-<Box sx={{ mt: 3 }}>
-<Typography variant="h6">Registry Scan</Typography>
-<Grid container spacing={2} sx={{ mt: 2 }}>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Image Risk Assessment</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>Image Security Issues</Typography>
-    </Box>
-  </Grid>
-  <Grid item xs={12} sm={6} md={4}>
-    <Box 
-      className='whiteBg' 
-      sx={{ p: 2, height: 200 }}
-    >
-      <Typography>hi</Typography>
-    </Box>
-  </Grid>
-</Grid>
-</Box> */}

@@ -39,24 +39,7 @@ const AddSlider = (props) => {
         setSelectedWidgets(updatedWidgets);
         props.addWidget(updatedWidgets);
     };
-//    const handleConfirm =()=>{
-       
-//        const obj = {
-//         "categoryName": tabs==0?'CSPM Executive Dashboard':tabs==1?"CWPP Dashboard Dashboard":tabs==2?'Registry Scan':'my name is snigdha',
-//         // "categoryName": "CWPP Dashboard Dashboard",
-//         "widgets": [
-//           {
-//             "widgetName": inputValue,
-//             "widgetText": inputValue1
-//           }
-//         ]
-//       };
-//       console.log(obj);
-//       dispatch(addWidget(obj));
-//       setInputValue1('');
-//       setInputValue('');
-//       props?.handleSliderClose()
-//    }
+    
    const handleConfirm = () => {
     if (inputValue.trim() === '' || inputValue1.trim() === '') {
         alert("Please fill in both widget name and text.");

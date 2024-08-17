@@ -13,11 +13,13 @@ const initialState = {
     {
       "categoryName": "Registry Scan",
       "widgets": [
-        ]
+        
+      ]
     },
     {
       "categoryName": "my name is snigdha",
       "widgets": [
+       
         
       ]
     }

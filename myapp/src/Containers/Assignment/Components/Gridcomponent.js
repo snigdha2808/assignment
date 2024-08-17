@@ -7,7 +7,6 @@ import AddSlider from './AddSlider';
 const GridComponent = (props) => {
   const [slider, setSlider] = useState(false);
   const { categoryName, widgetArray } = props;
-  console.log(categoryName,"snigdha", widgetArray);
   const [tabNo,setTabNo]=useState();
   useEffect(()=>{
     let Tab= categoryName=='CSPM Executive Dashboard'?0:categoryName=='CWPP Dashboard Dashboard'?1:categoryName=='Registry Scan'?2:3;
@@ -28,7 +27,7 @@ const GridComponent = (props) => {
       <Typography variant="h6">{categoryName}</Typography>
       <Grid container spacing={2} sx={{ mt: 2 }}>
         {widgetArray.map((el, index) => (
-          <GridChildComponent key={index} name={el.widgetName} categoryName={categoryName} />
+          <GridChildComponent key={index} name={el.widgetName} categoryName={categoryName} text={el.widgetText} />
         ))}
         <Grid item>
                
